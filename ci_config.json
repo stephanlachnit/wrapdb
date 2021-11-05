@@ -32,6 +32,18 @@
       "glib:tests=false"
     ]
   },
+  "imgui": {
+    "_comment": ["- Disable sdl_renderer in CI as version 2.0.17+ is required."],
+    "build_options": [
+      "imgui:sdl_renderer=disabled"
+    ],
+    "debian_packages": [
+      "liballegro5-dev",
+      "libglfw3-dev",
+      "libsdl2-dev",
+      "libvulkan-dev"
+    ]
+  },
   "liburing": {
     "linux_only": true
   },
